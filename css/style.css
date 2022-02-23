@@ -1,0 +1,30 @@
+body {
+    background-color: #b91450;
+}
+
+main.container, section.ticket-recap {
+    background-color: white;
+    color: #b91450;
+}
+
+input {
+    border-color: #b91450;
+}
+
+main.container input {
+    width: 300px;
+}
+
+button {
+    width: 100px;
+    background-color: lightgray;
+    color: #b91450;
+}
+
+button:first-child {
+    border-color:rgb(247, 247, 46);
+}
+
+button:last-child {
+    border-color: green;
+}
