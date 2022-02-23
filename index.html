@@ -22,7 +22,7 @@
                     Nome Cognome
                 </p>
 
-                <input type="text" placeholder="Inserisci il tuo Nome e Cognome" class="rounded fs-5">
+                <input type="text" placeholder="Inserisci il tuo Nome e Cognome" class="rounded fs-5" id="user-name">
             </div>
 
             <div class="col-4">
@@ -30,13 +30,22 @@
                     Km da percorrere
                 </p>
 
-                <input type="text" placeholder="Inserisci i km da percorrere" class="rounded fs-5">
+                <input type="text" placeholder="Inserisci i km da percorrere" class="rounded fs-5" id="user-km">
             </div>
 
             <div class="col-3">
                 <p>
                     Fascia d'età
-                </p>  
+                </p>
+                
+                <select name="età" id="età">
+                    <option value="Minorenne">Minorenne</option>
+
+                    <option value="Maggiorenne">Maggiorenne</option>
+
+                    <option value="Over65">Over 65</option>
+                    
+                </select>
             </div>
         </div>
 
@@ -52,49 +61,57 @@
         Il tuo biglietto
     </h1>
 
-    <section class="container ticket-recap text-black">
+    <section class="container ticket-recap text-black ">
 
         <h2 class="text-uppercase">
             Dettaglio passeggeri
         </h2>
 
         <div class="row">
-            <div class="col bg-secondary">
-                <p class="text-uppercase">Nome passeggero</p>
+            <div class="col-4 bg-secondary">
+                <p class="text-uppercase fw-bold fs-2">Nome passeggero</p>
 
-                <p id="traveller-name">
+                <p id="traveller-name" class="fs-2">
 
                 </p>
             </div>
 
             <div class="col">
-                <p class="">
+                <p class="fw-bold fs-4">
                     Offerta
                 </p>
+
+                <p id="ticket-type">
+
+                </p>
             </div>
 
             <div class="col">
-                <p class="">
+                <p class="fw-bold fs-4 mb-5">
                     Carrozza
                 </p>
 
-                <p>
-                    5
+                <p class="fs-2">
+                    
                 </p>
             </div>
 
             <div class="col">
-                <p class="">
+                <p class="fw-bold fs-4 mb-5">
                     Codice CP
                 </p>
 
-                <p>
-                    92911
+                <p class="fs-2">
+                    
                 </p>
             </div>
 
             <div class="col">
-                <p class="">
+                <p class="fw-bold fs-4">
+                    Costo biglietto
+                </p>
+
+                <p class="fw-bold fs-4" id="ticket-price">
                     Costo biglietto
                 </p>
             </div>
