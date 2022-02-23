@@ -1,3 +1,4 @@
+
 document.getElementById("enter-button").addEventListener('click', function(){
 
     /*prendo il valore dell'id user-name*/
@@ -29,5 +30,7 @@ document.getElementById("enter-button").addEventListener('click', function(){
         document.getElementById("ticket-type").innerHTML = "Biglietto regolare"
     }
 
+    document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 15) +1;
 
+    document.getElementById("codice").innerHTML = Math.floor(Math.random() * 100000);
 });

@@ -28,3 +28,7 @@ button:first-child {
 button:last-child {
     border-color: green;
 }
+
+.ticket-recap .row {
+    border-top: 3px solid lightgray;
+}
